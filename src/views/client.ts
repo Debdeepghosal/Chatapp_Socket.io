@@ -1,6 +1,6 @@
 import { moveMessagePortToContext } from "worker_threads";
 
-const socket=io('http://localhost:3000');
+const socket=io();
 
 const form=document.getElementById('chatform') as HTMLElement;
 const messageInput=document.getElementById('write-message') as HTMLElement;

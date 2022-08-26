@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const socket = io('http://localhost:3000');
+const socket = io();
 const form = document.getElementById('chatform');
 const messageInput = document.getElementById('write-message');
 const messageContainer = document.getElementsByClassName('messages-chat');
