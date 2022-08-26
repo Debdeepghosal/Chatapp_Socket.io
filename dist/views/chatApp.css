@@ -1,0 +1,224 @@
+body {
+    padding: 5%;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  }
+  
+  .container {
+    padding:0;
+    background-color: #FFF; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    height: 700px;
+  }
+  
+  /* ===== MENU ===== */
+  .menu {
+    float: left;
+    height: 700px;;
+    width: 70px;
+    background: #4768b5;
+    background: -webkit-linear-gradient(#4768b5, #35488e);
+    background: -o-linear-gradient(#4768b5, #35488e);
+    background: -moz-linear-gradient(#4768b5, #35488e);
+    background: linear-gradient(#4768b5, #35488e);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+  }
+  
+  
+  .chat {
+    /* width: calc(65% - 85px); */
+  }
+  
+  .header-chat {
+    background-color: #FFF;
+    height: 90px;
+    box-shadow: 0px 3px 2px rgba(0,0,0,0.100);
+    display:flex;
+    align-items: center;
+  }
+  
+  .chat .header-chat .icon {
+    margin-left: 30px;
+    color:#515151;
+    font-size: 14pt;
+  }
+  
+  .chat .header-chat .name {
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+    font-family:'Montserrat', sans-serif;
+    font-size: 13pt;
+    color:#515151;
+  }
+  
+  .chat .header-chat .right {
+    position: absolute;
+    right: 40px;
+  }
+  
+  .chat .messages-chat {
+    padding: 25px 35px;
+    overflow-y: scroll;
+    height: 29rem;
+  }
+  
+  .chat .messages-chat .message {
+    display:flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .chat .messages-chat .message .photo {
+      display: block;
+      width: 45px;
+      height: 45px;
+      background: #E6E7ED;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  .chat .messages-chat .text {
+    margin: 0 35px;
+    background-color: #f6f6f6;
+    padding: 15px;
+    border-radius: 12px;
+  }
+  
+  .text-only {
+    margin-left: 45px;
+  }
+  
+  .time {
+    font-size: 10px;
+    color:lightgrey;
+    margin-bottom:10px;
+    margin-left: 85px;
+  }
+  
+  .response-time {
+    float: right;
+    margin-right: 40px !important;
+  }
+  
+  .response {
+    float: right;
+    margin-right: 0px !important;
+    margin-left:auto; /* flexbox alignment rule */
+  }
+  
+  .response .text {
+    background-color: #e3effd !important;
+  }
+  
+  .footer-chat {
+    margin: 0rem 5rem;
+    background-color: #5a383800;
+    border: 2px solid #000;
+    border-radius: 30rem;
+
+    
+  }
+  
+  .chat .footer-chat .icon {
+    margin-left: 30px;
+    color:#C0C0C0;
+    font-size: 14pt;
+  }
+  
+  .chat .footer-chat .send {
+    color:#fff;
+    background-color: #4f6ebd;
+    position: absolute;
+    right: 50px;
+    padding: 12px 12px 12px 12px;
+    border-radius: 50px;
+    font-size: 14pt;
+  }
+  
+  .chat .footer-chat .name {
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+    font-family:'Montserrat', sans-serif;
+    font-size: 13pt;
+    color:#515151;
+  }
+  
+  .chat .footer-chat .right {
+    position: absolute;
+    right: 40px;
+  }
+  
+  #write-message {
+    border: 2px solid transparent;
+    width: 95%;
+    height: 50px;
+    border-radius: 30rem;
+    font-size: 1.2rem;
+
+  }
+  #write-message:focus {
+    outline: none;
+  }
+  
+  .footer-chat *::-webkit-input-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+  }
+  .footer-chat input *:-moz-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+  }
+  .footer-chat input *::-moz-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+    margin-left:5px;
+  }
+  .footer-chat input *:-ms-input-placeholder {
+    color: #C0C0C0;
+    font-size: 13pt;
+  }
+  
+  .message-left{
+    margin: 3px 35px;
+    padding: 1rem;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+  }
+  .message-right{
+    margin: 3px 35px;
+    padding: 1rem;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    text-align: right;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+  }
+  .message-centre{
+    margin: 3px 35px;
+    padding: 1rem;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+  }
+
+.button{
+  height: 2rem;
+    width: 5rem;
+    margin-top: 0.7rem;
+    margin-right: 1rem;
+    border-radius: 50rem;
+    border: solid white;
+    font-size: 1.1rem;
+    color: #606279;
+}
+.button:hover{
+  background-color: #c9c9c9;
+}
