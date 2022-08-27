@@ -9,10 +9,10 @@ const io = require('socket.io')(server, {
         origin: "*"
     },
 });
+app.use(express.static(__dirname + '/views'));
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/index.html');
 });
-app.use(express.static('./views'));
 io.on("connection", (socket) => {
     socket.on("new-user-joined", (name) => {
         users[socket.id] = name;
